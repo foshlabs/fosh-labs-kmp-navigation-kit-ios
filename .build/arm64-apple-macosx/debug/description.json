@@ -1,0 +1,733 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.xctest/Contents/MacOS/FoshLabsNavigationKitPackageTests",
+      "packagePath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios",
+      "productName" : "FoshLabsNavigationKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.FoshLabsNavigationKit-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/sources",
+      "importPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/ModalNavigationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationAction.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHandlerModifier.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHost.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/SceneViewFactory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FoshLabsNavigationKit",
+      "moduleOutputPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKit.swiftmodule",
+      "objects" : [
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/ModalNavigationManager.swift.o",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationAction.swift.o",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationHandlerModifier.swift.o",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationHost.swift.o",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationManager.swift.o",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/SceneViewFactory.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/include/FoshLabsNavigationKit-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fosh_labs_kmp_navigation_kit_ios"
+      ],
+      "outputFileMapPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/ModalNavigationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationAction.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationHandlerModifier.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationHost.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/SceneViewFactory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/ModalNavigationManager.swift",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationAction.swift",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHandlerModifier.swift",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHost.swift",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationManager.swift",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/SceneViewFactory.swift"
+      ],
+      "tempsPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FoshLabsNavigationKitPackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/sources",
+      "importPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FoshLabsNavigationKitPackageTests",
+      "moduleOutputPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKitPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/include/FoshLabsNavigationKitPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fosh_labs_kmp_navigation_kit_ios"
+      ],
+      "outputFileMapPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.FoshLabsNavigationKitTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/sources",
+      "importPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Tests/FoshLabsNavigationKitTests/FoshLabsNavigationKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "FoshLabsNavigationKitTests",
+      "moduleOutputPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKitTests.swiftmodule",
+      "objects" : [
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/FoshLabsNavigationKitTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "fosh_labs_kmp_navigation_kit_ios"
+      ],
+      "outputFileMapPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/FoshLabsNavigationKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules/FoshLabsNavigationKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Tests/FoshLabsNavigationKitTests/FoshLabsNavigationKitTests.swift"
+      ],
+      "tempsPath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "FoshLabsNavigationKit" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FoshLabsNavigationKit",
+      "-package-name",
+      "fosh_labs_kmp_navigation_kit_ios",
+      "-c",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/ModalNavigationManager.swift",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationAction.swift",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHandlerModifier.swift",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHost.swift",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationManager.swift",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/SceneViewFactory.swift",
+      "-I",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/include/FoshLabsNavigationKit-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fosh_labs_kmp_navigation_kit_ios",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FoshLabsNavigationKitPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FoshLabsNavigationKitPackageTests",
+      "-package-name",
+      "fosh_labs_kmp_navigation_kit_ios",
+      "-c",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/include/FoshLabsNavigationKitPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fosh_labs_kmp_navigation_kit_ios",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "FoshLabsNavigationKitTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "FoshLabsNavigationKitTests",
+      "-package-name",
+      "fosh_labs_kmp_navigation_kit_ios",
+      "-c",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Tests/FoshLabsNavigationKitTests/FoshLabsNavigationKitTests.swift",
+      "-I",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "fosh_labs_kmp_navigation_kit_ios",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "FoshLabsNavigationKit" : [
+
+    ],
+    "FoshLabsNavigationKitPackageTests" : [
+      "FoshLabsNavigationKitTests",
+      "FoshLabsNavigationKit"
+    ],
+    "FoshLabsNavigationKitTests" : [
+      "FoshLabsNavigationKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/ModalNavigationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationAction.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHandlerModifier.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationHost.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/NavigationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Sources/FoshLabsNavigationKit/SceneViewFactory.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/sources"
+    },
+    "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/sources"
+    },
+    "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/ModalNavigationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationAction.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationHandlerModifier.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationHost.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/NavigationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKit.build/SceneViewFactory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/FoshLabsNavigationKitTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/Tests/FoshLabsNavigationKitTests/FoshLabsNavigationKitTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitTests.build/sources"
+    },
+    "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

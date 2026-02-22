@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.d",
+    "object": "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/adam/Developer/Fosh Labs/fosh-labs-kmp-navigation-kit-ios/.build/arm64-apple-macosx/debug/FoshLabsNavigationKitPackageTests.build/runner.dia"
+  }
+}
