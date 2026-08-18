@@ -52,6 +52,8 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
             }
 
         case let .replaceRoot(destination):
+            sheet = nil
+            fullScreenCover = nil
             rootScene = destination
             path = NavigationPath()
 
