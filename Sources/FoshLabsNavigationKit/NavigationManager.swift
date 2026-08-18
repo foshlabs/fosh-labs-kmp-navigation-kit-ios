@@ -52,6 +52,10 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
             }
 
         case let .replaceRoot(destination):
+            // A presented modal is not part of `path` — without this it would
+            // keep covering the freshly replaced root.
+            sheet = nil
+            fullScreenCover = nil
             rootScene = destination
             path = NavigationPath()
 
