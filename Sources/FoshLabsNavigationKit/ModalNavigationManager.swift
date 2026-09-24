@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Manages navigation within a modal context (fullScreenCover).
+/// Manages navigation within a modal context (sheet or fullScreenCover).
 /// Each modal gets its own navigation stack.
 public class ModalNavigationManager: ObservableObject {
 

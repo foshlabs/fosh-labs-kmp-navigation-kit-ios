@@ -27,7 +27,7 @@ public struct NavigationHost<SceneType: Hashable & Identifiable, Factory: SceneV
                 }
         }
         .sheet(item: $navigator.sheet) { scene in
-            factory.view(for: scene)
+            ModalNavigationHost(rootScene: scene, factory: factory)
         }
         .fullScreenCover(item: $navigator.fullScreenCover) { scene in
             ModalNavigationHost(rootScene: scene, factory: factory)
@@ -36,7 +36,7 @@ public struct NavigationHost<SceneType: Hashable & Identifiable, Factory: SceneV
     }
 }
 
-/// Navigation host for modal contexts (fullScreenCover).
+/// Navigation host for modal contexts (sheet and fullScreenCover).
 /// Gets its own ModalNavigationManager for independent push/pop within the modal.
 public struct ModalNavigationHost<SceneType: Hashable & Identifiable, Factory: SceneViewFactory>: View
     where Factory.SceneType == SceneType {
