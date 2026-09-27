@@ -11,6 +11,16 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
     @Published public var fullScreenCover: SceneType?
     @Published public var rootScene: SceneType
 
+    /// The stack that `replaceRoot` just replaced. It keeps the pushed screens the user was on
+    /// so the outgoing `NavigationStack` can keep rendering them while it fades out instead of
+    /// popping to its root. Released once the outgoing stack has disappeared.
+    @Published private(set) var retiredStack: RetiredStack?
+
+    struct RetiredStack {
+        let root: SceneType
+        let path: NavigationPath
+    }
+
     // MARK: - Initialization
 
     public init(initialScene: SceneType) {
@@ -52,13 +62,38 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
             }
 
         case let .replaceRoot(destination):
-            sheet = nil
-            fullScreenCover = nil
-            rootScene = destination
-            path = NavigationPath()
+            replaceRoot(with: destination)
 
         default:
             break
         }
+    }
+
+    // MARK: - Helpers
+
+    private func replaceRoot(with destination: SceneType) {
+        sheet = nil
+        fullScreenCover = nil
+        guard destination != rootScene else {
+            path = NavigationPath()
+            return
+        }
+        withAnimation(.easeInOut(duration: 0.3)) {
+            retiredStack = RetiredStack(root: rootScene, path: path)
+            path = NavigationPath()
+            rootScene = destination
+        }
+    }
+
+    /// The path the outgoing stack for `root` should keep rendering while it fades out.
+    func retiredPath(for root: SceneType) -> NavigationPath {
+        guard let retiredStack, retiredStack.root == root else { return NavigationPath() }
+        return retiredStack.path
+    }
+
+    /// Drops the retired path once the outgoing stack for `root` is gone.
+    func releaseRetiredStack(for root: SceneType) {
+        guard retiredStack?.root == root else { return }
+        retiredStack = nil
     }
 }

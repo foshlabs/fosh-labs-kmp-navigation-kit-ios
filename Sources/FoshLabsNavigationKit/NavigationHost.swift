@@ -20,19 +20,46 @@ public struct NavigationHost<SceneType: Hashable & Identifiable, Factory: SceneV
     // MARK: - Layout
 
     public var body: some View {
-        NavigationStack(path: $navigator.path) {
-            factory.view(for: navigator.rootScene)
+        RootNavigationStack(root: navigator.rootScene, navigator: navigator, factory: factory)
+            .id(navigator.rootScene)
+            .transition(.opacity)
+            .sheet(item: $navigator.sheet) { scene in
+                ModalNavigationHost(rootScene: scene, factory: factory)
+            }
+            .fullScreenCover(item: $navigator.fullScreenCover) { scene in
+                ModalNavigationHost(rootScene: scene, factory: factory)
+            }
+    }
+}
+
+/// One NavigationStack per root scene. Replacing the root swaps the whole stack with a
+/// cross-fade. The incoming stack owns `navigator.path` from its first frame; the outgoing
+/// one renders the path it was retired with (see `NavigationManager.retiredStack`), so it
+/// fades out showing the screen the user was on instead of popping to its root.
+private struct RootNavigationStack<SceneType: Hashable & Identifiable, Factory: SceneViewFactory>: View
+    where Factory.SceneType == SceneType {
+
+    let root: SceneType
+    @ObservedObject var navigator: NavigationManager<SceneType>
+    let factory: Factory
+
+    var body: some View {
+        NavigationStack(path: path) {
+            factory.view(for: root)
                 .navigationDestination(for: SceneType.self) { scene in
                     factory.view(for: scene)
                 }
         }
-        .sheet(item: $navigator.sheet) { scene in
-            ModalNavigationHost(rootScene: scene, factory: factory)
+        .onDisappear {
+            navigator.releaseRetiredStack(for: root)
         }
-        .fullScreenCover(item: $navigator.fullScreenCover) { scene in
-            ModalNavigationHost(rootScene: scene, factory: factory)
+    }
+
+    private var path: Binding<NavigationPath> {
+        if root == navigator.rootScene {
+            return $navigator.path
         }
-        .animation(.easeInOut(duration: 0.3), value: navigator.rootScene)
+        return .constant(navigator.retiredPath(for: root))
     }
 }
 
