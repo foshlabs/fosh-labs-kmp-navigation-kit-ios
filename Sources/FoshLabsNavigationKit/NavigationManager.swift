@@ -11,6 +11,13 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
     @Published public var fullScreenCover: SceneType?
     @Published public var rootScene: SceneType
 
+    /// Paths of roots that `replaceRoot` has replaced, keyed by root. Each keeps the pushed
+    /// screens the user was on so the outgoing `NavigationStack` can keep rendering them while
+    /// it fades out instead of popping to its root. An entry is released once its stack has
+    /// disappeared. Not published: it is only written inside the `rootScene` transaction or
+    /// from `onDisappear`, and no live view depends on it.
+    private(set) var retiredPaths: [SceneType: NavigationPath] = [:]
+
     // MARK: - Initialization
 
     public init(initialScene: SceneType) {
@@ -52,13 +59,36 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
             }
 
         case let .replaceRoot(destination):
-            sheet = nil
-            fullScreenCover = nil
-            rootScene = destination
-            path = NavigationPath()
+            replaceRoot(with: destination)
 
         default:
             break
         }
+    }
+
+    // MARK: - Helpers
+
+    private func replaceRoot(with destination: SceneType) {
+        sheet = nil
+        fullScreenCover = nil
+        guard destination != rootScene else {
+            path = NavigationPath()
+            return
+        }
+        withAnimation(.easeInOut(duration: 0.3)) {
+            retiredPaths[rootScene] = path
+            path = NavigationPath()
+            rootScene = destination
+        }
+    }
+
+    /// The path the outgoing stack for `root` should keep rendering while it fades out.
+    func retiredPath(for root: SceneType) -> NavigationPath {
+        retiredPaths[root] ?? NavigationPath()
+    }
+
+    /// Drops the retired path once the outgoing stack for `root` is gone.
+    func releaseRetiredPath(for root: SceneType) {
+        retiredPaths[root] = nil
     }
 }
