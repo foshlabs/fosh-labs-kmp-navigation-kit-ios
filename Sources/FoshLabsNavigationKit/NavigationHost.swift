@@ -34,7 +34,7 @@ public struct NavigationHost<SceneType: Hashable & Identifiable, Factory: SceneV
 
 /// One NavigationStack per root scene. Replacing the root swaps the whole stack with a
 /// cross-fade. The incoming stack owns `navigator.path` from its first frame; the outgoing
-/// one renders the path it was retired with (see `NavigationManager.retiredStack`), so it
+/// one renders the path it was retired with (see `NavigationManager.retiredPaths`), so it
 /// fades out showing the screen the user was on instead of popping to its root.
 private struct RootNavigationStack<SceneType: Hashable & Identifiable, Factory: SceneViewFactory>: View
     where Factory.SceneType == SceneType {
@@ -51,7 +51,7 @@ private struct RootNavigationStack<SceneType: Hashable & Identifiable, Factory: 
                 }
         }
         .onDisappear {
-            navigator.releaseRetiredStack(for: root)
+            navigator.releaseRetiredPath(for: root)
         }
     }
 

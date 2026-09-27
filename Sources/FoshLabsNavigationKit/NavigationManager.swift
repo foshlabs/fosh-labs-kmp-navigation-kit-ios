@@ -11,15 +11,12 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
     @Published public var fullScreenCover: SceneType?
     @Published public var rootScene: SceneType
 
-    /// The stack that `replaceRoot` just replaced. It keeps the pushed screens the user was on
-    /// so the outgoing `NavigationStack` can keep rendering them while it fades out instead of
-    /// popping to its root. Released once the outgoing stack has disappeared.
-    @Published private(set) var retiredStack: RetiredStack?
-
-    struct RetiredStack {
-        let root: SceneType
-        let path: NavigationPath
-    }
+    /// Paths of roots that `replaceRoot` has replaced, keyed by root. Each keeps the pushed
+    /// screens the user was on so the outgoing `NavigationStack` can keep rendering them while
+    /// it fades out instead of popping to its root. An entry is released once its stack has
+    /// disappeared. Not published: it is only written inside the `rootScene` transaction or
+    /// from `onDisappear`, and no live view depends on it.
+    private(set) var retiredPaths: [SceneType: NavigationPath] = [:]
 
     // MARK: - Initialization
 
@@ -79,7 +76,7 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
             return
         }
         withAnimation(.easeInOut(duration: 0.3)) {
-            retiredStack = RetiredStack(root: rootScene, path: path)
+            retiredPaths[rootScene] = path
             path = NavigationPath()
             rootScene = destination
         }
@@ -87,13 +84,11 @@ public class NavigationManager<SceneType: Hashable & Identifiable>: ObservableOb
 
     /// The path the outgoing stack for `root` should keep rendering while it fades out.
     func retiredPath(for root: SceneType) -> NavigationPath {
-        guard let retiredStack, retiredStack.root == root else { return NavigationPath() }
-        return retiredStack.path
+        retiredPaths[root] ?? NavigationPath()
     }
 
     /// Drops the retired path once the outgoing stack for `root` is gone.
-    func releaseRetiredStack(for root: SceneType) {
-        guard retiredStack?.root == root else { return }
-        retiredStack = nil
+    func releaseRetiredPath(for root: SceneType) {
+        retiredPaths[root] = nil
     }
 }

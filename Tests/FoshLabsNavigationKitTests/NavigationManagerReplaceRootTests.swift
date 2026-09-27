@@ -42,7 +42,20 @@ final class NavigationManagerReplaceRootTests: XCTestCase {
 
         XCTAssertEqual(navigator.rootScene, .onboarding)
         XCTAssertEqual(navigator.path.count, 0)
-        XCTAssertNil(navigator.retiredStack)
+        XCTAssertTrue(navigator.retiredPaths.isEmpty)
+    }
+
+    func testSecondReplaceRootDuringFadeKeepsFirstRetiredPath() {
+        let navigator = makeNavigator()
+
+        navigator.process(action: .replaceRoot(.home))
+        navigator.process(action: .push(.detail))
+        navigator.process(action: .replaceRoot(.detail))
+
+        XCTAssertEqual(navigator.rootScene, .detail)
+        XCTAssertEqual(navigator.path.count, 0)
+        XCTAssertEqual(navigator.retiredPath(for: .onboarding).count, 1)
+        XCTAssertEqual(navigator.retiredPath(for: .home).count, 1)
     }
 
     func testReplaceRootDismissesModals() {
@@ -56,15 +69,15 @@ final class NavigationManagerReplaceRootTests: XCTestCase {
         XCTAssertNil(navigator.fullScreenCover)
     }
 
-    func testReleaseRetiredStackOnlyForMatchingRoot() {
+    func testReleaseRetiredPathOnlyForMatchingRoot() {
         let navigator = makeNavigator()
         navigator.process(action: .replaceRoot(.home))
 
-        navigator.releaseRetiredStack(for: .home)
-        XCTAssertNotNil(navigator.retiredStack)
+        navigator.releaseRetiredPath(for: .home)
+        XCTAssertEqual(navigator.retiredPaths.count, 1)
 
-        navigator.releaseRetiredStack(for: .onboarding)
-        XCTAssertNil(navigator.retiredStack)
+        navigator.releaseRetiredPath(for: .onboarding)
+        XCTAssertTrue(navigator.retiredPaths.isEmpty)
         XCTAssertEqual(navigator.retiredPath(for: .onboarding).count, 0)
     }
 }
