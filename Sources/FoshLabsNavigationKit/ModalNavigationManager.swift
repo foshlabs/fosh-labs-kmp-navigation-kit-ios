@@ -9,9 +9,14 @@ public class ModalNavigationManager: ObservableObject {
     @Published public var path = NavigationPath()
     @Published public var sheet: AnyHashable?
 
+    /// The manager of the modal this one is presented from, if it is a sheet over a sheet.
+    public private(set) weak var parent: ModalNavigationManager?
+
     // MARK: - Initialization
 
-    public init() {}
+    public init(parent: ModalNavigationManager? = nil) {
+        self.parent = parent
+    }
 
     // MARK: - Actions
 
@@ -35,6 +40,22 @@ public class ModalNavigationManager: ObservableObject {
 
     public func dismissSheet() {
         sheet = nil
+    }
+
+    /// Closes the topmost modal this manager can reach: its own sheet, or else the sheet it
+    /// is itself shown in. Returns `false` when neither exists, so the root navigator owns
+    /// the dismissal.
+    @discardableResult
+    public func dismiss() -> Bool {
+        if sheet != nil {
+            dismissSheet()
+            return true
+        }
+        if let parent {
+            parent.dismissSheet()
+            return true
+        }
+        return false
     }
 
     /// Type-safe accessor for the current sheet scene.
