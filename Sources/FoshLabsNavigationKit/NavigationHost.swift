@@ -70,13 +70,18 @@ public struct ModalNavigationHost<SceneType: Hashable & Identifiable, Factory: S
 
     // MARK: - Properties
 
-    @StateObject private var modalNavigator = ModalNavigationManager()
+    @StateObject private var modalNavigator: ModalNavigationManager
     let rootScene: SceneType
     let factory: Factory
 
     // MARK: - Initialization
 
     public init(rootScene: SceneType, factory: Factory) {
+        self.init(rootScene: rootScene, factory: factory, parent: nil)
+    }
+
+    init(rootScene: SceneType, factory: Factory, parent: ModalNavigationManager?) {
+        self._modalNavigator = StateObject(wrappedValue: ModalNavigationManager(parent: parent))
         self.rootScene = rootScene
         self.factory = factory
     }
@@ -91,7 +96,7 @@ public struct ModalNavigationHost<SceneType: Hashable & Identifiable, Factory: S
                 }
         }
         .sheet(item: sheetBinding) { scene in
-            factory.view(for: scene)
+            ModalNavigationHost(rootScene: scene, factory: factory, parent: modalNavigator)
         }
         .environmentObject(modalNavigator)
         .environment(\.modalNavigationManager, modalNavigator)

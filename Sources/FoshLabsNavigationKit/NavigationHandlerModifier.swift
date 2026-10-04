@@ -68,9 +68,7 @@ private struct NavigationHandlerModifier<SceneType: Hashable & Identifiable>: Vi
                 return
 
             case .dismiss:
-                if modalNav.sheet != nil {
-                    modalNav.dismissSheet()
-                } else {
+                if !modalNav.dismiss() {
                     navigator.process(action: action)
                 }
                 return
